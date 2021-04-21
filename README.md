@@ -3,6 +3,7 @@
 ## Avtorji
 
 * Pija Kapš
+* Miha Kapš
 
 ## Kratek opis
 
