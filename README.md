@@ -1,5 +1,10 @@
 # Vislice
 
+## Seznam avtorjev
+
+* Pija Kapš
+* Matija Pretnar
+
 ## Kratek opis
 
 Vislice so preprosta igra, pri kateri moramo uganiti besedo.
