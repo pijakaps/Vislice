@@ -3,6 +3,7 @@
 ## Avtorji
 
 * Pija Kapš
+* Klara Udovč
 
 ## Kratek opis
 
