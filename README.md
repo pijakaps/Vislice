@@ -1,9 +1,8 @@
 # Vislice
 
-## Seznam avtorjev
+## Avtorji
 
 * Pija Kapš
-* Matija Pretnar
 
 ## Kratek opis
 
