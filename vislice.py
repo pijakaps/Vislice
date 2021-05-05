@@ -26,7 +26,7 @@ def pokazi_igro(id_igre):
 
 @bottle.post("/igra/<id_igre:int>/")
 def ugibaj_na_igri(id_igre):
-    ugibana = bottle.request.forms["crka"]
+    ugibana = bottle.request.form["crka"]
     
     vislice.ugibaj(id_igre, ugibana)
 
