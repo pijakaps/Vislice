@@ -29,7 +29,7 @@
     <form action="/igra/" method="post">
       <button type="submit">Nova igra</button>
     </form>
-  % elif stanje = PORAZ:
+  % elif stanje == PORAZ:
     <h3>Ojoj, izgubil si</h3> 
     <h3>Pravilno geslo je bilo {{ igra.geslo }}</h3> 
     <form action="/igra/" method="post">
@@ -42,7 +42,8 @@
       </label>
         <input type="submit">
     </form>
-
+  % end
+  
 </body>
 
 </html>
