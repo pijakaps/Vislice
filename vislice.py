@@ -17,12 +17,9 @@ def nova_igra():
 
 @bottle.get("/igra/<id_igre:int>/")
 def pokazi_igro(id_igre):
-    trenutna_igra, trenutno_stanje = \
-        vislice.igre[id_igre]
+    trenutna_igra, trenutno_stanje = vislice.igre[id_igre]
 
-    return bottle.template("igra.tpl",
-        igra=trenutna_igra, stanje=trenutno_stanje
-    )
+    return bottle.template("igra.tpl", igra=trenutna_igra, stanje=trenutno_stanje)
 
 @bottle.post("/igra/<id_igre:int>/")
 def ugibaj_na_igri(id_igre):
