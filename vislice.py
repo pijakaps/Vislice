@@ -16,13 +16,12 @@ def nova_igra():
 
 @bottle.get("/igra/<id_igre:int>/")
 def pokazi_igro(id_igre):
-    trenutna_igra, trenutno_stanje = \
-        vislice.igre[id_igre]
+    trenutna_igra, trenutno_stanje = vislice.igre[id_igre]
     return bottle.template("igra.tpl", igra=trenutna_igra, stanje=trenutno_stanje)
 
 @bottle.post("/igra/<id_igre:int>/")
 def ugibaj_na_igri(id_igre):
-    ugibana = bottle.request.form("crka")
+    ugibana = bottle.request.form('crka')
     vislice.ugibaj(id_igre, ugibana)
     bottle.redirect(f"/igra/{id_igre}/")
 

@@ -36,9 +36,7 @@ class Vislice:
 
     def ugibaj(self, id_igre, crka):
         igra, _ = self.igre[id_igre]
-
         novo_stanje = igra.ugibaj(crka)
-
         self.igre[id_igre] = (igra, novo_stanje)
 
 
