@@ -102,7 +102,7 @@ class Igra:
                 return NAPACNA_CRKA
 
 
-with open('vislice/besede.txt', 'r') as f:
+with open('besede.txt', 'r') as f:
     bazen_besed = [beseda.strip().upper() for beseda in f.readlines()]
 
 def nova_igra():
