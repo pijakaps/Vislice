@@ -22,6 +22,13 @@
 
   <img src="img/{{ igra.stevilo_napak() }}.jpg" alt="Stopnja obešenosti">
 
+  <form method="POST">
+    <label> Vnesi črko:
+      <input type="text" name="crka">
+    </label>
+      <input type="submit">
+  </form>
+
 </body>
 
 </html>
