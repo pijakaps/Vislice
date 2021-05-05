@@ -28,7 +28,7 @@ class Vislice:
 
     def nova_igra(self):
         nov_id = self.prost_id_igre()
-        sveza_igra = nova_igra(bazen_besed)
+        sveza_igra = nova_igra()
 
         self.igre[nova_igra] = {sveza_igra, ZACETEK}
 
@@ -41,8 +41,6 @@ class Vislice:
 
         self.igre[id_igre] = (igra, novo_stanje)
 
-
-    
 
 
 class Igra:
