@@ -14,30 +14,23 @@ PORAZ = 'X'
 class Vislice:
     def __init__(self):
         self.igre = {}
-        self.max_id = 0
 
     def prost_id_igre(self):
-        self.max_id += 1
-        return self.max_id
-
-    '''Druga možnost
-    def prost_id_igre_drugace(self):
-        n = max(self.igre.keys())
-        return n + 1
-    '''
+        if len(self.igre) == 0:
+            return 0
+        else:
+            return max(self.igre.keys()) + 1
 
     def nova_igra(self):
-        nov_id = self.prost_id_igre()
+        id_igre = self.prost_id_igre()
         sveza_igra = nova_igra()
-
-        self.igre[nova_igra] = {sveza_igra, ZACETEK}
-
-        return nov_id
+        self.igre[id_igre] = {sveza_igra, ZACETEK}
+        return id_igre
 
     def ugibaj(self, id_igre, crka):
         igra, _ = self.igre[id_igre]
-        novo_stanje = igra.ugibaj(crka)
-        self.igre[id_igre] = (igra, novo_stanje)
+        stanje = igra.ugibaj(crka)
+        self.igre[id_igre] = (igra, stanje)
 
 
 
@@ -106,7 +99,3 @@ with open('besede.txt', 'r') as f:
 def nova_igra():
     geslo = random.choice(bazen_besed)
     return Igra(geslo, [])
-
-#testno_geslo = 'DEŽUJE'
-#testne_crke = ['A', 'I', 'O', 'U', 'J', 'D', 'K']
-#igra = Igra(testno_geslo, testne_crke)
